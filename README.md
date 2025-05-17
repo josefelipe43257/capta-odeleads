@@ -46,20 +46,24 @@
   </audio>
 
   <!-- Banner -->
-  <div class="mb-4">
+  <div class="mb-6">
     <!-- Desktop -->
-    <img src="https://raw.githubusercontent.com/josefelipe43257/Publica-o-de-imagens-e-videos-publicos/refs/heads/main/Banner%20computador%201705_page-0001.jpg"
-         alt="Banner Desktop"
-         class="hidden md:block w-full max-w-[1680px] h-[500px] object-cover mx-auto rounded-xl" />
+    <img 
+      src="https://raw.githubusercontent.com/josefelipe43257/Publica-o-de-imagens-e-videos-publicos/refs/heads/main/Banner%20computador%201705_page-0001.jpg"
+      alt="Banner Desktop"
+      class="hidden md:block w-full max-w-[1680px] h-[500px] object-cover mx-auto rounded-xl" 
+    />
 
     <!-- Mobile -->
-    <img src="https://raw.githubusercontent.com/josefelipe43257/Publica-o-de-imagens-e-videos-publicos/refs/heads/main/Banner%20celular%201705_page-0001.jpg"
-         alt="Banner Mobile"
-         class="block md:hidden w-full max-w-[720px] h-auto object-contain mx-auto rounded-xl" />
+    <img 
+      src="https://raw.githubusercontent.com/josefelipe43257/Publica-o-de-imagens-e-videos-publicos/refs/heads/main/Banner%20celular%201705_page-0001.jpg"
+      alt="Banner Mobile"
+      class="block md:hidden w-full max-w-[720px] h-auto object-contain mx-auto rounded-xl" 
+    />
   </div>
 
-  <!-- Botão logo abaixo do banner -->
-  <div class="text-center mb-8">
+  <!-- Botão -->
+  <div class="text-center mb-10">
     <a 
       href="https://chat.whatsapp.com/JvaRwATnd1W4pL7fQUBmNp" 
       class="botao-exclusivo" 
@@ -71,28 +75,32 @@
   </div>
 
   <!-- Seção do Evento -->
-  <div class="max-w-6xl mx-auto bg-white rounded-2xl shadow-md p-6">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-black">
+  <div class="max-w-6xl mx-auto bg-white rounded-2xl shadow-md p-6 md:p-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center text-black">
 
       <!-- Data -->
       <div class="flex flex-col items-center">
         <a href="https://chat.whatsapp.com/JvaRwATnd1W4pL7fQUBmNp" target="_blank">
-          <img src="https://w7.pngwing.com/pngs/162/843/png-transparent-computer-icons-calendar-date-others-miscellaneous-text-calendar-thumbnail.png"
-               alt="Ícone de Calendário"
-               class="w-20 h-20 object-contain mb-4 rounded-xl" />
+          <img 
+            src="https://w7.pngwing.com/pngs/162/843/png-transparent-computer-icons-calendar-date-others-miscellaneous-text-calendar-thumbnail.png"
+            alt="Ícone de Calendário"
+            class="w-20 h-20 object-contain mb-4 rounded-xl" 
+          />
         </a>
-        <h2 class="font-bold text-2xl md:text-4xl">Dia 07/05</h2>
+        <h2 class="font-bold text-2xl md:text-3xl">Dia 07/05</h2>
         <p class="text-lg text-gray-500">ao meio-dia</p>
       </div>
 
       <!-- Evento -->
       <div class="flex flex-col items-center">
         <a href="https://chat.whatsapp.com/JvaRwATnd1W4pL7fQUBmNp" target="_blank">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG0E9ASMXpoi7ASiGE2NyCFPFXdswTQ71iyA&s"
-               alt="Ícone de Calça"
-               class="w-20 h-20 object-contain mb-4 rounded-xl" />
+          <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG0E9ASMXpoi7ASiGE2NyCFPFXdswTQ71iyA&s"
+            alt="Ícone de Calça"
+            class="w-20 h-20 object-contain mb-4 rounded-xl" 
+          />
         </a>
-        <h2 class="font-bold text-2xl md:text-4xl leading-tight">O maior evento online</h2>
+        <h2 class="font-bold text-2xl md:text-3xl leading-tight">O maior evento online</h2>
         <p class="text-lg text-gray-500 text-center">de vendas de calças do Brasil</p>
       </div>
 
@@ -103,7 +111,7 @@
             <path d="M12 17a2 2 0 1 0 .001-3.999A2 2 0 0 0 12 17zm6-7h-1V7a5 5 0 0 0-10 0v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2zm-8-3a3 3 0 0 1 6 0v3H10V7z"/>
           </svg>
         </a>
-        <h2 class="font-bold text-2xl md:text-4xl">Compra 100% segura</h2>
+        <h2 class="font-bold text-2xl md:text-3xl">Compra 100% segura</h2>
         <p class="text-lg text-gray-500">seus dados protegidos</p>
       </div>
 
@@ -114,14 +122,14 @@
             <path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.38-.47 2.63-1.26 3.63l1.46 1.46A7.932 7.932 0 0 0 20 12c0-4.42-3.58-8-8-8zm-6.74 6.37A7.932 7.932 0 0 0 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3c-3.31 0-6-2.69-6-6 0-1.38.47-2.63 1.26-3.63l-1.46-1.46z"/>
           </svg>
         </a>
-        <h2 class="font-bold text-2xl md:text-4xl">Lançamento exclusivo</h2>
+        <h2 class="font-bold text-2xl md:text-3xl">Lançamento exclusivo</h2>
         <p class="text-lg text-gray-500">entre e não perca</p>
       </div>
 
     </div>
   </div>
 
-  <!-- Scripts -->
+  <!-- Script -->
   <script>
     function playClickSound() {
       const audio = document.getElementById('clickSound');
