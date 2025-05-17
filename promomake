@@ -6,11 +6,6 @@
   <title>Evento de Calças</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    #botao-exclusivo-container {
-      text-align: center;
-      margin: 20px 0;
-    }
-
     .botao-exclusivo {
       background-color: #000;
       color: white;
@@ -45,8 +40,13 @@
 </head>
 <body class="bg-gray-100 p-4">
 
-  <!-- Banner Responsivo -->
-  <div class="mb-6">
+  <!-- Áudio para o clique -->
+  <audio id="clickSound" preload="auto">
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_731a1341a6.mp3?filename=click-124467.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Banner -->
+  <div class="mb-4">
     <!-- Desktop -->
     <img src="https://raw.githubusercontent.com/josefelipe43257/Publica-o-de-imagens-e-videos-publicos/refs/heads/main/Banner%20computador%201705_page-0001.jpg"
          alt="Banner Desktop"
@@ -56,6 +56,18 @@
     <img src="https://raw.githubusercontent.com/josefelipe43257/Publica-o-de-imagens-e-videos-publicos/refs/heads/main/Banner%20celular%201705_page-0001.jpg"
          alt="Banner Mobile"
          class="block md:hidden w-full max-w-[720px] h-auto object-contain mx-auto rounded-xl" />
+  </div>
+
+  <!-- Botão logo abaixo do banner -->
+  <div class="text-center mb-8">
+    <a 
+      href="https://chat.whatsapp.com/JvaRwATnd1W4pL7fQUBmNp" 
+      class="botao-exclusivo" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      onclick="playClickSound(); if(typeof fbq !== 'undefined'){fbq('trackCustom', 'GrupoSecretoDiaD', {campanha: 'DiaD_WhatsApp', origem: 'LandingPage'});}">
+      CLIQUE AQUI 🔐
+    </a>
   </div>
 
   <!-- Seção do Evento -->
@@ -109,27 +121,15 @@
     </div>
   </div>
 
-  <!-- Botão Estilo Exclusivo -->
-  <div id="botao-exclusivo-container">
-    <a 
-      href="https://chat.whatsapp.com/JvaRwATnd1W4pL7fQUBmNp" 
-      class="botao-exclusivo" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      onclick="if(typeof fbq !== 'undefined'){fbq('trackCustom', 'GrupoSecretoDiaD', {campanha: 'DiaD_WhatsApp', origem: 'LandingPage'});}">
-      CLIQUE AQUI 🔐
-    </a>
-  </div>
-
-  <!-- Meta Pixel Event -->
+  <!-- Scripts -->
   <script>
-    document.querySelectorAll('a[href*="chat.whatsapp.com"]').forEach(link => {
-      link.addEventListener('click', () => {
-        if (typeof fbq !== 'undefined') {
-          fbq('trackCustom', 'GrupoSecretoDiaD');
-        }
-      });
-    });
+    function playClickSound() {
+      const audio = document.getElementById('clickSound');
+      if (audio) {
+        audio.currentTime = 0;
+        audio.play();
+      }
+    }
   </script>
 </body>
 </html>
